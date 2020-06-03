@@ -1,0 +1,256 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Class_and_object_01.o Class_and_object_02.o Member_Functions_in_Classes_demo.o Constructor_and_Destructor_01.o Default_Constructors_demo.o Parameterized_Constructors_Demo.o Copy_constructor_demo.o Destructors_demo.o Access_Modifiers_Public.o Access_Modifiers_Private_01.o Access_Modifiers_Private_02.o Access_Modifiers_Protected.o Inheritance_demo_01.o Modes_of_Inheritance_demo.o Single_Inheritance_demo.o Multiple_Inheritance_demo.o Multilevel_Inheritance_demo.o Hierarchical_Inheritance_demo.o Hybrid_Inheritance_demo.o Hybrid_inheritance_Multipath_inheritance_01.o Virtual_base_class.o Encapsulation_in_C++_demo.o Function_Overloading_demo.o Operator_Overloading_demo.o Function_overriding_demo.o Abstraction_in_C++_01.o Structure_vs_class_in_C++_01.o Structure_vs_class_in_C++_02.o Static_data_members_01.o Static_data_members_02.o Static_data_members_03.o Member_Functions_of_Classes_01.o Member_Functions_of_Classes_02.o Simple_Member_functions.o Static_Member_functions.o Const_Member_functions.o Inline_functions.o Friend_Function_sample_01.o Friend_Function_sample_02.o Friend_Function_sample_03.o C++_Friend_class_01.o C++_Friend_class_02.o C++_Friend_class_03.o Local_Classe_01.o Local_Classe_02.o Local_Classe_03.o Local_Classe_04.o Local_Classe_05.o Local_Classe_06.o Nested_Classes_01.o Nested_Classes_02.o Initialization_of_data_members_01.o Virtual_Functions_and_Runtime_Polymorphism_01.o Virtual_Functions_Demo_01.o Virtual_Functions_Demo_02.o Virtual_Functions_Demo_03.o Abstract_Class_and_Pure_Virtual_Function_demo.o Function_Overloading_01.o Functions_that_cannot_be_overloaded_01.o Functions_that_cannot_be_overloaded_02.o Functions_that_cannot_be_overloaded_03.o Functions_that_cannot_be_overloaded_04.o Function_overloading_and_const_keyword_01.o Function_overloading_and_const_keyword_02.o Function_overloading_and_return_type_demo.o Function_Overloading_and_float_in_C++_01.o Function_Overloading_and_float_in_C++_02.o Operator_overloading_Programming_01.o Operator_overloading_Programming_01.o Operator_overloading_Programming_02.o Operator_overloading_Programming_03.o Operator_overloading_Programming_04.o Operator_overloading_Programming_05.o Operator_overloading_Programming_06.o OOP_Exercise_01.o OOP_Exercise_02.o OOP_Exercise_03.o OOP_Exercise_04.o
+LINKOBJ  = Class_and_object_01.o Class_and_object_02.o Member_Functions_in_Classes_demo.o Constructor_and_Destructor_01.o Default_Constructors_demo.o Parameterized_Constructors_Demo.o Copy_constructor_demo.o Destructors_demo.o Access_Modifiers_Public.o Access_Modifiers_Private_01.o Access_Modifiers_Private_02.o Access_Modifiers_Protected.o Inheritance_demo_01.o Modes_of_Inheritance_demo.o Single_Inheritance_demo.o Multiple_Inheritance_demo.o Multilevel_Inheritance_demo.o Hierarchical_Inheritance_demo.o Hybrid_Inheritance_demo.o Hybrid_inheritance_Multipath_inheritance_01.o Virtual_base_class.o Encapsulation_in_C++_demo.o Function_Overloading_demo.o Operator_Overloading_demo.o Function_overriding_demo.o Abstraction_in_C++_01.o Structure_vs_class_in_C++_01.o Structure_vs_class_in_C++_02.o Static_data_members_01.o Static_data_members_02.o Static_data_members_03.o Member_Functions_of_Classes_01.o Member_Functions_of_Classes_02.o Simple_Member_functions.o Static_Member_functions.o Const_Member_functions.o Inline_functions.o Friend_Function_sample_01.o Friend_Function_sample_02.o Friend_Function_sample_03.o C++_Friend_class_01.o C++_Friend_class_02.o C++_Friend_class_03.o Local_Classe_01.o Local_Classe_02.o Local_Classe_03.o Local_Classe_04.o Local_Classe_05.o Local_Classe_06.o Nested_Classes_01.o Nested_Classes_02.o Initialization_of_data_members_01.o Virtual_Functions_and_Runtime_Polymorphism_01.o Virtual_Functions_Demo_01.o Virtual_Functions_Demo_02.o Virtual_Functions_Demo_03.o Abstract_Class_and_Pure_Virtual_Function_demo.o Function_Overloading_01.o Functions_that_cannot_be_overloaded_01.o Functions_that_cannot_be_overloaded_02.o Functions_that_cannot_be_overloaded_03.o Functions_that_cannot_be_overloaded_04.o Function_overloading_and_const_keyword_01.o Function_overloading_and_const_keyword_02.o Function_overloading_and_return_type_demo.o Function_Overloading_and_float_in_C++_01.o Function_Overloading_and_float_in_C++_02.o Operator_overloading_Programming_01.o Operator_overloading_Programming_01.o Operator_overloading_Programming_02.o Operator_overloading_Programming_03.o Operator_overloading_Programming_04.o Operator_overloading_Programming_05.o Operator_overloading_Programming_06.o OOP_Exercise_01.o OOP_Exercise_02.o OOP_Exercise_03.o OOP_Exercise_04.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = OOP_Projects.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Class_and_object_01.o: Class_and_object_01.cpp
+	$(CPP) -c Class_and_object_01.cpp -o Class_and_object_01.o $(CXXFLAGS)
+
+Class_and_object_02.o: Class_and_object_02.cpp
+	$(CPP) -c Class_and_object_02.cpp -o Class_and_object_02.o $(CXXFLAGS)
+
+Member_Functions_in_Classes_demo.o: Member_Functions_in_Classes_demo.cpp
+	$(CPP) -c Member_Functions_in_Classes_demo.cpp -o Member_Functions_in_Classes_demo.o $(CXXFLAGS)
+
+Constructor_and_Destructor_01.o: Constructor_and_Destructor_01.cpp
+	$(CPP) -c Constructor_and_Destructor_01.cpp -o Constructor_and_Destructor_01.o $(CXXFLAGS)
+
+Default_Constructors_demo.o: Default_Constructors_demo.cpp
+	$(CPP) -c Default_Constructors_demo.cpp -o Default_Constructors_demo.o $(CXXFLAGS)
+
+Parameterized_Constructors_Demo.o: Parameterized_Constructors_Demo.cpp
+	$(CPP) -c Parameterized_Constructors_Demo.cpp -o Parameterized_Constructors_Demo.o $(CXXFLAGS)
+
+Copy_constructor_demo.o: Copy_constructor_demo.cpp
+	$(CPP) -c Copy_constructor_demo.cpp -o Copy_constructor_demo.o $(CXXFLAGS)
+
+Destructors_demo.o: Destructors_demo.cpp
+	$(CPP) -c Destructors_demo.cpp -o Destructors_demo.o $(CXXFLAGS)
+
+Access_Modifiers_Public.o: Access_Modifiers_Public.cpp
+	$(CPP) -c Access_Modifiers_Public.cpp -o Access_Modifiers_Public.o $(CXXFLAGS)
+
+Access_Modifiers_Private_01.o: Access_Modifiers_Private_01.cpp
+	$(CPP) -c Access_Modifiers_Private_01.cpp -o Access_Modifiers_Private_01.o $(CXXFLAGS)
+
+Access_Modifiers_Private_02.o: Access_Modifiers_Private_02.cpp
+	$(CPP) -c Access_Modifiers_Private_02.cpp -o Access_Modifiers_Private_02.o $(CXXFLAGS)
+
+Access_Modifiers_Protected.o: Access_Modifiers_Protected.cpp
+	$(CPP) -c Access_Modifiers_Protected.cpp -o Access_Modifiers_Protected.o $(CXXFLAGS)
+
+Inheritance_demo_01.o: Inheritance_demo_01.cpp
+	$(CPP) -c Inheritance_demo_01.cpp -o Inheritance_demo_01.o $(CXXFLAGS)
+
+Modes_of_Inheritance_demo.o: Modes_of_Inheritance_demo.cpp
+	$(CPP) -c Modes_of_Inheritance_demo.cpp -o Modes_of_Inheritance_demo.o $(CXXFLAGS)
+
+Single_Inheritance_demo.o: Single_Inheritance_demo.cpp
+	$(CPP) -c Single_Inheritance_demo.cpp -o Single_Inheritance_demo.o $(CXXFLAGS)
+
+Multiple_Inheritance_demo.o: Multiple_Inheritance_demo.cpp
+	$(CPP) -c Multiple_Inheritance_demo.cpp -o Multiple_Inheritance_demo.o $(CXXFLAGS)
+
+Multilevel_Inheritance_demo.o: Multilevel_Inheritance_demo.cpp
+	$(CPP) -c Multilevel_Inheritance_demo.cpp -o Multilevel_Inheritance_demo.o $(CXXFLAGS)
+
+Hierarchical_Inheritance_demo.o: Hierarchical_Inheritance_demo.cpp
+	$(CPP) -c Hierarchical_Inheritance_demo.cpp -o Hierarchical_Inheritance_demo.o $(CXXFLAGS)
+
+Hybrid_Inheritance_demo.o: Hybrid_Inheritance_demo.cpp
+	$(CPP) -c Hybrid_Inheritance_demo.cpp -o Hybrid_Inheritance_demo.o $(CXXFLAGS)
+
+Hybrid_inheritance_Multipath_inheritance_01.o: Hybrid_inheritance_Multipath_inheritance_01.cpp
+	$(CPP) -c Hybrid_inheritance_Multipath_inheritance_01.cpp -o Hybrid_inheritance_Multipath_inheritance_01.o $(CXXFLAGS)
+
+Virtual_base_class.o: Virtual_base_class.cpp
+	$(CPP) -c Virtual_base_class.cpp -o Virtual_base_class.o $(CXXFLAGS)
+
+Encapsulation_in_C++_demo.o: Encapsulation_in_C++_demo.cpp
+	$(CPP) -c Encapsulation_in_C++_demo.cpp -o Encapsulation_in_C++_demo.o $(CXXFLAGS)
+
+Function_Overloading_demo.o: Function_Overloading_demo.cpp
+	$(CPP) -c Function_Overloading_demo.cpp -o Function_Overloading_demo.o $(CXXFLAGS)
+
+Operator_Overloading_demo.o: Operator_Overloading_demo.cpp
+	$(CPP) -c Operator_Overloading_demo.cpp -o Operator_Overloading_demo.o $(CXXFLAGS)
+
+Function_overriding_demo.o: Function_overriding_demo.cpp
+	$(CPP) -c Function_overriding_demo.cpp -o Function_overriding_demo.o $(CXXFLAGS)
+
+Abstraction_in_C++_01.o: Abstraction_in_C++_01.cpp
+	$(CPP) -c Abstraction_in_C++_01.cpp -o Abstraction_in_C++_01.o $(CXXFLAGS)
+
+Structure_vs_class_in_C++_01.o: Structure_vs_class_in_C++_01.cpp
+	$(CPP) -c Structure_vs_class_in_C++_01.cpp -o Structure_vs_class_in_C++_01.o $(CXXFLAGS)
+
+Structure_vs_class_in_C++_02.o: Structure_vs_class_in_C++_02.cpp
+	$(CPP) -c Structure_vs_class_in_C++_02.cpp -o Structure_vs_class_in_C++_02.o $(CXXFLAGS)
+
+Static_data_members_01.o: Static_data_members_01.cpp
+	$(CPP) -c Static_data_members_01.cpp -o Static_data_members_01.o $(CXXFLAGS)
+
+Static_data_members_02.o: Static_data_members_02.cpp
+	$(CPP) -c Static_data_members_02.cpp -o Static_data_members_02.o $(CXXFLAGS)
+
+Static_data_members_03.o: Static_data_members_03.cpp
+	$(CPP) -c Static_data_members_03.cpp -o Static_data_members_03.o $(CXXFLAGS)
+
+Member_Functions_of_Classes_01.o: Member_Functions_of_Classes_01.cpp
+	$(CPP) -c Member_Functions_of_Classes_01.cpp -o Member_Functions_of_Classes_01.o $(CXXFLAGS)
+
+Member_Functions_of_Classes_02.o: Member_Functions_of_Classes_02.cpp
+	$(CPP) -c Member_Functions_of_Classes_02.cpp -o Member_Functions_of_Classes_02.o $(CXXFLAGS)
+
+Simple_Member_functions.o: Simple_Member_functions.cpp
+	$(CPP) -c Simple_Member_functions.cpp -o Simple_Member_functions.o $(CXXFLAGS)
+
+Static_Member_functions.o: Static_Member_functions.cpp
+	$(CPP) -c Static_Member_functions.cpp -o Static_Member_functions.o $(CXXFLAGS)
+
+Const_Member_functions.o: Const_Member_functions.cpp
+	$(CPP) -c Const_Member_functions.cpp -o Const_Member_functions.o $(CXXFLAGS)
+
+Inline_functions.o: Inline_functions.cpp
+	$(CPP) -c Inline_functions.cpp -o Inline_functions.o $(CXXFLAGS)
+
+Friend_Function_sample_01.o: Friend_Function_sample_01.cpp
+	$(CPP) -c Friend_Function_sample_01.cpp -o Friend_Function_sample_01.o $(CXXFLAGS)
+
+Friend_Function_sample_02.o: Friend_Function_sample_02.cpp
+	$(CPP) -c Friend_Function_sample_02.cpp -o Friend_Function_sample_02.o $(CXXFLAGS)
+
+Friend_Function_sample_03.o: Friend_Function_sample_03.cpp
+	$(CPP) -c Friend_Function_sample_03.cpp -o Friend_Function_sample_03.o $(CXXFLAGS)
+
+C++_Friend_class_01.o: C++_Friend_class_01.cpp
+	$(CPP) -c C++_Friend_class_01.cpp -o C++_Friend_class_01.o $(CXXFLAGS)
+
+C++_Friend_class_02.o: C++_Friend_class_02.cpp
+	$(CPP) -c C++_Friend_class_02.cpp -o C++_Friend_class_02.o $(CXXFLAGS)
+
+C++_Friend_class_03.o: C++_Friend_class_03.cpp
+	$(CPP) -c C++_Friend_class_03.cpp -o C++_Friend_class_03.o $(CXXFLAGS)
+
+Local_Classe_01.o: Local_Classe_01.cpp
+	$(CPP) -c Local_Classe_01.cpp -o Local_Classe_01.o $(CXXFLAGS)
+
+Local_Classe_02.o: Local_Classe_02.cpp
+	$(CPP) -c Local_Classe_02.cpp -o Local_Classe_02.o $(CXXFLAGS)
+
+Local_Classe_03.o: Local_Classe_03.cpp
+	$(CPP) -c Local_Classe_03.cpp -o Local_Classe_03.o $(CXXFLAGS)
+
+Local_Classe_04.o: Local_Classe_04.cpp
+	$(CPP) -c Local_Classe_04.cpp -o Local_Classe_04.o $(CXXFLAGS)
+
+Local_Classe_05.o: Local_Classe_05.cpp
+	$(CPP) -c Local_Classe_05.cpp -o Local_Classe_05.o $(CXXFLAGS)
+
+Local_Classe_06.o: Local_Classe_06.cpp
+	$(CPP) -c Local_Classe_06.cpp -o Local_Classe_06.o $(CXXFLAGS)
+
+Nested_Classes_01.o: Nested_Classes_01.cpp
+	$(CPP) -c Nested_Classes_01.cpp -o Nested_Classes_01.o $(CXXFLAGS)
+
+Nested_Classes_02.o: Nested_Classes_02.cpp
+	$(CPP) -c Nested_Classes_02.cpp -o Nested_Classes_02.o $(CXXFLAGS)
+
+Initialization_of_data_members_01.o: Initialization_of_data_members_01.cpp
+	$(CPP) -c Initialization_of_data_members_01.cpp -o Initialization_of_data_members_01.o $(CXXFLAGS)
+
+Virtual_Functions_and_Runtime_Polymorphism_01.o: Virtual_Functions_and_Runtime_Polymorphism_01.cpp
+	$(CPP) -c Virtual_Functions_and_Runtime_Polymorphism_01.cpp -o Virtual_Functions_and_Runtime_Polymorphism_01.o $(CXXFLAGS)
+
+Virtual_Functions_Demo_01.o: Virtual_Functions_Demo_01.cpp
+	$(CPP) -c Virtual_Functions_Demo_01.cpp -o Virtual_Functions_Demo_01.o $(CXXFLAGS)
+
+Virtual_Functions_Demo_02.o: Virtual_Functions_Demo_02.cpp
+	$(CPP) -c Virtual_Functions_Demo_02.cpp -o Virtual_Functions_Demo_02.o $(CXXFLAGS)
+
+Virtual_Functions_Demo_03.o: Virtual_Functions_Demo_03.cpp
+	$(CPP) -c Virtual_Functions_Demo_03.cpp -o Virtual_Functions_Demo_03.o $(CXXFLAGS)
+
+Abstract_Class_and_Pure_Virtual_Function_demo.o: Abstract_Class_and_Pure_Virtual_Function_demo.cpp
+	$(CPP) -c Abstract_Class_and_Pure_Virtual_Function_demo.cpp -o Abstract_Class_and_Pure_Virtual_Function_demo.o $(CXXFLAGS)
+
+Function_Overloading_01.o: Function_Overloading_01.cpp
+	$(CPP) -c Function_Overloading_01.cpp -o Function_Overloading_01.o $(CXXFLAGS)
+
+Functions_that_cannot_be_overloaded_01.o: Functions_that_cannot_be_overloaded_01.cpp
+	$(CPP) -c Functions_that_cannot_be_overloaded_01.cpp -o Functions_that_cannot_be_overloaded_01.o $(CXXFLAGS)
+
+Functions_that_cannot_be_overloaded_02.o: Functions_that_cannot_be_overloaded_02.cpp
+	$(CPP) -c Functions_that_cannot_be_overloaded_02.cpp -o Functions_that_cannot_be_overloaded_02.o $(CXXFLAGS)
+
+Functions_that_cannot_be_overloaded_03.o: Functions_that_cannot_be_overloaded_03.cpp
+	$(CPP) -c Functions_that_cannot_be_overloaded_03.cpp -o Functions_that_cannot_be_overloaded_03.o $(CXXFLAGS)
+
+Functions_that_cannot_be_overloaded_04.o: Functions_that_cannot_be_overloaded_04.cpp
+	$(CPP) -c Functions_that_cannot_be_overloaded_04.cpp -o Functions_that_cannot_be_overloaded_04.o $(CXXFLAGS)
+
+Function_overloading_and_const_keyword_01.o: Function_overloading_and_const_keyword_01.cpp
+	$(CPP) -c Function_overloading_and_const_keyword_01.cpp -o Function_overloading_and_const_keyword_01.o $(CXXFLAGS)
+
+Function_overloading_and_const_keyword_02.o: Function_overloading_and_const_keyword_02.cpp
+	$(CPP) -c Function_overloading_and_const_keyword_02.cpp -o Function_overloading_and_const_keyword_02.o $(CXXFLAGS)
+
+Function_overloading_and_return_type_demo.o: Function_overloading_and_return_type_demo.cpp
+	$(CPP) -c Function_overloading_and_return_type_demo.cpp -o Function_overloading_and_return_type_demo.o $(CXXFLAGS)
+
+Function_Overloading_and_float_in_C++_01.o: Function_Overloading_and_float_in_C++_01.cpp
+	$(CPP) -c Function_Overloading_and_float_in_C++_01.cpp -o Function_Overloading_and_float_in_C++_01.o $(CXXFLAGS)
+
+Function_Overloading_and_float_in_C++_02.o: Function_Overloading_and_float_in_C++_02.cpp
+	$(CPP) -c Function_Overloading_and_float_in_C++_02.cpp -o Function_Overloading_and_float_in_C++_02.o $(CXXFLAGS)
+
+Operator_overloading_Programming_01.o: Operator_overloading_Programming_01.cpp
+	$(CPP) -c Operator_overloading_Programming_01.cpp -o Operator_overloading_Programming_01.o $(CXXFLAGS)
+
+Operator_overloading_Programming_02.o: Operator_overloading_Programming_02.cpp
+	$(CPP) -c Operator_overloading_Programming_02.cpp -o Operator_overloading_Programming_02.o $(CXXFLAGS)
+
+Operator_overloading_Programming_03.o: Operator_overloading_Programming_03.cpp
+	$(CPP) -c Operator_overloading_Programming_03.cpp -o Operator_overloading_Programming_03.o $(CXXFLAGS)
+
+Operator_overloading_Programming_04.o: Operator_overloading_Programming_04.cpp
+	$(CPP) -c Operator_overloading_Programming_04.cpp -o Operator_overloading_Programming_04.o $(CXXFLAGS)
+
+Operator_overloading_Programming_05.o: Operator_overloading_Programming_05.cpp
+	$(CPP) -c Operator_overloading_Programming_05.cpp -o Operator_overloading_Programming_05.o $(CXXFLAGS)
+
+Operator_overloading_Programming_06.o: Operator_overloading_Programming_06.cpp
+	$(CPP) -c Operator_overloading_Programming_06.cpp -o Operator_overloading_Programming_06.o $(CXXFLAGS)
+
+OOP_Exercise_01.o: OOP_Exercise_01.cpp
+	$(CPP) -c OOP_Exercise_01.cpp -o OOP_Exercise_01.o $(CXXFLAGS)
+
+OOP_Exercise_02.o: OOP_Exercise_02.cpp
+	$(CPP) -c OOP_Exercise_02.cpp -o OOP_Exercise_02.o $(CXXFLAGS)
+
+OOP_Exercise_03.o: OOP_Exercise_03.cpp
+	$(CPP) -c OOP_Exercise_03.cpp -o OOP_Exercise_03.o $(CXXFLAGS)
+
+OOP_Exercise_04.o: OOP_Exercise_04.cpp
+	$(CPP) -c OOP_Exercise_04.cpp -o OOP_Exercise_04.o $(CXXFLAGS)

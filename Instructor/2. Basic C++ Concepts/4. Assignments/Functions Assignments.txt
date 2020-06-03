@@ -1,0 +1,36 @@
+1. C++ program to find maximum between two numbers
+-> result: 0 (num1 is maximum) and 1 (num2 is maximum)
+-> output: 0 is maximum
+
+2. C++ program to find maximum between three numbers
+-> result: max
+-> output: Maximum among all three numbers = max
+
+3. 3. C++ program to check whether a number is positive, negative or zero
+-> result: 0 (Number is ZERO); 1 (Number is POSITIVE); -1 (Number is NEGATIVE)
+-> output: ? Number is ZERO or Number is POSITIVE or Number is NEGATIVE
+
+4. C++ program to check whether a number is divisible by 5 and 11 or not
+-> result: 0 (Number is divisible by 5 and 11); 1 (Number is not divisible by 5 and 11)
+-> output: Number is divisible by 5 and 11 | Number is not divisible by 5 and 11
+
+5. C++ program check whether a number is even or odd
+-> result: 0 (Number is Even); 1 (Number is Odd)
+-> output: Number is Even | Number is Odd
+
+6. C++ program to check Leap Year
+-> result: 0 (leap year); 1 (normal year)
+-> output: leap year | normal year
+
+7. C++ program to check whether a character is alphabet or not
+-> result: 0 (Character is an ALPHABET); 1 (Character is NOT ALPHABET)
+-> output: Character is an ALPHABET | Character is NOT ALPHABET
+
+8. C++ program to find number of days in month
+-> result: value
+-> output: 
+ - (-1): The month is invalid.Please try again!
+ - (-2): The year is invalid.Please try again!
+ - (value): The month ? and year ? has {value} day.
+
+

@@ -1,0 +1,490 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = HelloWorld.o wchar_t_demo.o Wide_char_type_array_or_string.o Wcslen_function_demo.o Wcscpy_function_demo.o Wcscat_function_demo.o Wcscmp_function_demo.o Wcstok_function_demo.o Wcsncpy_function_demo.o Wcsstr_function_demo.o Datatype_Modifiers_demo.o Standard_output_stream.o Standard_input_stream.o Global_variables.o Local_Variables.o Sizeof_operator.o Operand_is_an_expression.o Need_of_Sizeof.o If_statement_c++.o If_else_in_c++.o Nested_if_in_C++.o Else_if_ladder.o Jump_Statements_Break.o Jump_Statements_Continue.o Jump_Statements_Goto.o Jump_Statements_Return.o Execute_both_if_and_else_statements.o Switch_Statement.o Req_Exercise01.o Exercise01.o Req_Exercise02.o Exercise02.o C++_Program_to_Print_Number_Entered_by_User.o Program_to_Add_Two_Integers.o Program_to_Check_Leap_Year.o Even_or_Odd_using_if_else.o Even_or_Odd_using_ternary_operators.o Find_Largest_Number_01.o Find_Largest_Number_02.o Find_Largest_Number_03.o Quadratic_Equation.o For_Loop_demo.o While_Loop_Demo.o Do_while_loop_demo.o Infinite_Loop.o Sum_of_Natural_Numbers_using_loop.o Find_Factorial_of_a_given_number.o Display_Multiplication_table.o Exercise03.o Exercise04.o Exercise05.o Reg_Exercise06.o Exercise06.o Reg_Exercise07.o Exercise07.o Func_sample01.o Func_Pass_by_Value.o Func_Pass_by_Reference.o Default_Arguments_01.o Default_Arguments_02.o Function_Argument_01.o Function_Argument_02.o Function_Argument_03.o Function_Argument_04.o Return_from_void_01.o Return_from_void_02.o Return_from_void_03.o Returning_multiple_values.o Functors_01.o Functors_02.o Program_without_transform.o Using_transform_function_of_STL.o Add_arrays_in_single_line.o Unary_operation_with_transform.o Binary_Operation_with_transform.o Unary_Operation.o Ceil_and_Floor_01.o Ceil_and_Floor_02.o Const_member_functions_01.o Const_member_functions_02.o Const_member_functions_03.o atol_function.o atoll_function.o atof_function.o swap_program_01.o swap_program_02.o "wcscat_\ function.o" 11_wcscmp_function_01.o 12_wcscpy_function.o 13_wcslen_function_01.o 13_wcslen_function_02.o 14_difftime_function.o 15_asctime_function.o 16_localtime_function.o 17_isnormal_function_float.o 17_isnormal_function_double.o 17_isnormal_function_long_double.o 18_ctime_Function_demo.o 1_Array_declaration_by_specifying_size.o 2_Array_declaration_by_initializing_elements.o 3_Specifying_size_and_initializing_elements.o Array_Example_01.o Array_Example_02.o Array_Example_03.o 1_Using_Pointers.o 2_Using_2D_array.o 3_Using_string_Keyword.o 4_Using_Vectors.o Two_Dimensional_Array.o Initializing_Two_Dimensional_Arrays.o Two_Dimensional_Array_Demo_01.o Three_Dimensional_Array.o Three_Dimensional_Array_Demo.o Raw_String_Literal_Demo.o Method_1_Writing_our_own_sizeof.o Method_2_Using_a_pointer_hack.o String_Stream_Demo.o Strtok_String_Demo.o Another_Example_of_strtok.o getline_string_01.o getline_string_02.o getline_string_03.o Count_number_of_words_in_a_string.o Convert_string_to_char_01.o Convert_string_to_char_02.o Character_array_to_string_01.o Character_array_to_string_02.o Single_character_to_string.o String_to_Integer_Array.o String_to_an_Integer_Demo.o Strrchr_function_demo.o isspace_function_demo_01.o isspace_function_demo_02.o isspace_function_demo_03.o Using_char_demo.o Using_char_demo_with_const.o Using_std_string_demo.o Using_char_demo_01.o Using_char_demo_02.o Using_char_demo_03.o Substring_in_C++_01.o Substring_in_C++_02.o Example_C++_Array_01.o Example_C++_Array_02.o Example_C++_Array_03.o Example_C++_Array_04.o Example_C++_Array_05.o Example_C++_Array_06.o Exercise_c++_array_01.o Array_Exercise_01.o Array_Exercise_02.o Array_Exercise_03.o Exercise_c++_array_02.o Exercise_c++_array_03.o Array_Exercise_04.o Array_Exercise_05.o Array_Exercise_06.o Exercise_c++_array_04.o Exercise_c++_array_05.o Exercise_c++_array_06.o Example_C++_Array_07.o Example_C++_Array_08.o Example_C++_Array_09.o Example_C++_Array_10.o Example_C++_Array_11.o
+LINKOBJ  = HelloWorld.o wchar_t_demo.o Wide_char_type_array_or_string.o Wcslen_function_demo.o Wcscpy_function_demo.o Wcscat_function_demo.o Wcscmp_function_demo.o Wcstok_function_demo.o Wcsncpy_function_demo.o Wcsstr_function_demo.o Datatype_Modifiers_demo.o Standard_output_stream.o Standard_input_stream.o Global_variables.o Local_Variables.o Sizeof_operator.o Operand_is_an_expression.o Need_of_Sizeof.o If_statement_c++.o If_else_in_c++.o Nested_if_in_C++.o Else_if_ladder.o Jump_Statements_Break.o Jump_Statements_Continue.o Jump_Statements_Goto.o Jump_Statements_Return.o Execute_both_if_and_else_statements.o Switch_Statement.o Req_Exercise01.o Exercise01.o Req_Exercise02.o Exercise02.o C++_Program_to_Print_Number_Entered_by_User.o Program_to_Add_Two_Integers.o Program_to_Check_Leap_Year.o Even_or_Odd_using_if_else.o Even_or_Odd_using_ternary_operators.o Find_Largest_Number_01.o Find_Largest_Number_02.o Find_Largest_Number_03.o Quadratic_Equation.o For_Loop_demo.o While_Loop_Demo.o Do_while_loop_demo.o Infinite_Loop.o Sum_of_Natural_Numbers_using_loop.o Find_Factorial_of_a_given_number.o Display_Multiplication_table.o Exercise03.o Exercise04.o Exercise05.o Reg_Exercise06.o Exercise06.o Reg_Exercise07.o Exercise07.o Func_sample01.o Func_Pass_by_Value.o Func_Pass_by_Reference.o Default_Arguments_01.o Default_Arguments_02.o Function_Argument_01.o Function_Argument_02.o Function_Argument_03.o Function_Argument_04.o Return_from_void_01.o Return_from_void_02.o Return_from_void_03.o Returning_multiple_values.o Functors_01.o Functors_02.o Program_without_transform.o Using_transform_function_of_STL.o Add_arrays_in_single_line.o Unary_operation_with_transform.o Binary_Operation_with_transform.o Unary_Operation.o Ceil_and_Floor_01.o Ceil_and_Floor_02.o Const_member_functions_01.o Const_member_functions_02.o Const_member_functions_03.o atol_function.o atoll_function.o atof_function.o swap_program_01.o swap_program_02.o "wcscat_ function.o" 11_wcscmp_function_01.o 12_wcscpy_function.o 13_wcslen_function_01.o 13_wcslen_function_02.o 14_difftime_function.o 15_asctime_function.o 16_localtime_function.o 17_isnormal_function_float.o 17_isnormal_function_double.o 17_isnormal_function_long_double.o 18_ctime_Function_demo.o 1_Array_declaration_by_specifying_size.o 2_Array_declaration_by_initializing_elements.o 3_Specifying_size_and_initializing_elements.o Array_Example_01.o Array_Example_02.o Array_Example_03.o 1_Using_Pointers.o 2_Using_2D_array.o 3_Using_string_Keyword.o 4_Using_Vectors.o Two_Dimensional_Array.o Initializing_Two_Dimensional_Arrays.o Two_Dimensional_Array_Demo_01.o Three_Dimensional_Array.o Three_Dimensional_Array_Demo.o Raw_String_Literal_Demo.o Method_1_Writing_our_own_sizeof.o Method_2_Using_a_pointer_hack.o String_Stream_Demo.o Strtok_String_Demo.o Another_Example_of_strtok.o getline_string_01.o getline_string_02.o getline_string_03.o Count_number_of_words_in_a_string.o Convert_string_to_char_01.o Convert_string_to_char_02.o Character_array_to_string_01.o Character_array_to_string_02.o Single_character_to_string.o String_to_Integer_Array.o String_to_an_Integer_Demo.o Strrchr_function_demo.o isspace_function_demo_01.o isspace_function_demo_02.o isspace_function_demo_03.o Using_char_demo.o Using_char_demo_with_const.o Using_std_string_demo.o Using_char_demo_01.o Using_char_demo_02.o Using_char_demo_03.o Substring_in_C++_01.o Substring_in_C++_02.o Example_C++_Array_01.o Example_C++_Array_02.o Example_C++_Array_03.o Example_C++_Array_04.o Example_C++_Array_05.o Example_C++_Array_06.o Exercise_c++_array_01.o Array_Exercise_01.o Array_Exercise_02.o Array_Exercise_03.o Exercise_c++_array_02.o Exercise_c++_array_03.o Array_Exercise_04.o Array_Exercise_05.o Array_Exercise_06.o Exercise_c++_array_04.o Exercise_c++_array_05.o Exercise_c++_array_06.o Example_C++_Array_07.o Example_C++_Array_08.o Example_C++_Array_09.o Example_C++_Array_10.o Example_C++_Array_11.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = BasicProject2020.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+HelloWorld.o: HelloWorld.cpp
+	$(CPP) -c HelloWorld.cpp -o HelloWorld.o $(CXXFLAGS)
+
+wchar_t_demo.o: wchar_t_demo.cpp
+	$(CPP) -c wchar_t_demo.cpp -o wchar_t_demo.o $(CXXFLAGS)
+
+Wide_char_type_array_or_string.o: Wide_char_type_array_or_string.cpp
+	$(CPP) -c Wide_char_type_array_or_string.cpp -o Wide_char_type_array_or_string.o $(CXXFLAGS)
+
+Wcslen_function_demo.o: Wcslen_function_demo.cpp
+	$(CPP) -c Wcslen_function_demo.cpp -o Wcslen_function_demo.o $(CXXFLAGS)
+
+Wcscpy_function_demo.o: Wcscpy_function_demo.cpp
+	$(CPP) -c Wcscpy_function_demo.cpp -o Wcscpy_function_demo.o $(CXXFLAGS)
+
+Wcscat_function_demo.o: Wcscat_function_demo.cpp
+	$(CPP) -c Wcscat_function_demo.cpp -o Wcscat_function_demo.o $(CXXFLAGS)
+
+Wcscmp_function_demo.o: Wcscmp_function_demo.cpp
+	$(CPP) -c Wcscmp_function_demo.cpp -o Wcscmp_function_demo.o $(CXXFLAGS)
+
+Wcstok_function_demo.o: Wcstok_function_demo.cpp
+	$(CPP) -c Wcstok_function_demo.cpp -o Wcstok_function_demo.o $(CXXFLAGS)
+
+Wcsncpy_function_demo.o: Wcsncpy_function_demo.cpp
+	$(CPP) -c Wcsncpy_function_demo.cpp -o Wcsncpy_function_demo.o $(CXXFLAGS)
+
+Wcsstr_function_demo.o: Wcsstr_function_demo.cpp
+	$(CPP) -c Wcsstr_function_demo.cpp -o Wcsstr_function_demo.o $(CXXFLAGS)
+
+Datatype_Modifiers_demo.o: Datatype_Modifiers_demo.cpp
+	$(CPP) -c Datatype_Modifiers_demo.cpp -o Datatype_Modifiers_demo.o $(CXXFLAGS)
+
+Standard_output_stream.o: Standard_output_stream.cpp
+	$(CPP) -c Standard_output_stream.cpp -o Standard_output_stream.o $(CXXFLAGS)
+
+Standard_input_stream.o: Standard_input_stream.cpp
+	$(CPP) -c Standard_input_stream.cpp -o Standard_input_stream.o $(CXXFLAGS)
+
+Global_variables.o: Global_variables.cpp
+	$(CPP) -c Global_variables.cpp -o Global_variables.o $(CXXFLAGS)
+
+Local_Variables.o: Local_Variables.cpp
+	$(CPP) -c Local_Variables.cpp -o Local_Variables.o $(CXXFLAGS)
+
+Sizeof_operator.o: Sizeof_operator.cpp
+	$(CPP) -c Sizeof_operator.cpp -o Sizeof_operator.o $(CXXFLAGS)
+
+Operand_is_an_expression.o: Operand_is_an_expression.cpp
+	$(CPP) -c Operand_is_an_expression.cpp -o Operand_is_an_expression.o $(CXXFLAGS)
+
+Need_of_Sizeof.o: Need_of_Sizeof.cpp
+	$(CPP) -c Need_of_Sizeof.cpp -o Need_of_Sizeof.o $(CXXFLAGS)
+
+If_statement_c++.o: If_statement_c++.cpp
+	$(CPP) -c If_statement_c++.cpp -o If_statement_c++.o $(CXXFLAGS)
+
+If_else_in_c++.o: If_else_in_c++.cpp
+	$(CPP) -c If_else_in_c++.cpp -o If_else_in_c++.o $(CXXFLAGS)
+
+Nested_if_in_C++.o: Nested_if_in_C++.cpp
+	$(CPP) -c Nested_if_in_C++.cpp -o Nested_if_in_C++.o $(CXXFLAGS)
+
+Else_if_ladder.o: Else_if_ladder.cpp
+	$(CPP) -c Else_if_ladder.cpp -o Else_if_ladder.o $(CXXFLAGS)
+
+Jump_Statements_Break.o: Jump_Statements_Break.cpp
+	$(CPP) -c Jump_Statements_Break.cpp -o Jump_Statements_Break.o $(CXXFLAGS)
+
+Jump_Statements_Continue.o: Jump_Statements_Continue.cpp
+	$(CPP) -c Jump_Statements_Continue.cpp -o Jump_Statements_Continue.o $(CXXFLAGS)
+
+Jump_Statements_Goto.o: Jump_Statements_Goto.cpp
+	$(CPP) -c Jump_Statements_Goto.cpp -o Jump_Statements_Goto.o $(CXXFLAGS)
+
+Jump_Statements_Return.o: Jump_Statements_Return.cpp
+	$(CPP) -c Jump_Statements_Return.cpp -o Jump_Statements_Return.o $(CXXFLAGS)
+
+Execute_both_if_and_else_statements.o: Execute_both_if_and_else_statements.cpp
+	$(CPP) -c Execute_both_if_and_else_statements.cpp -o Execute_both_if_and_else_statements.o $(CXXFLAGS)
+
+Switch_Statement.o: Switch_Statement.cpp
+	$(CPP) -c Switch_Statement.cpp -o Switch_Statement.o $(CXXFLAGS)
+
+Exercise01.o: Exercise01.cpp
+	$(CPP) -c Exercise01.cpp -o Exercise01.o $(CXXFLAGS)
+
+Exercise02.o: Exercise02.cpp
+	$(CPP) -c Exercise02.cpp -o Exercise02.o $(CXXFLAGS)
+
+C++_Program_to_Print_Number_Entered_by_User.o: C++_Program_to_Print_Number_Entered_by_User.cpp
+	$(CPP) -c C++_Program_to_Print_Number_Entered_by_User.cpp -o C++_Program_to_Print_Number_Entered_by_User.o $(CXXFLAGS)
+
+Program_to_Add_Two_Integers.o: Program_to_Add_Two_Integers.cpp
+	$(CPP) -c Program_to_Add_Two_Integers.cpp -o Program_to_Add_Two_Integers.o $(CXXFLAGS)
+
+Program_to_Check_Leap_Year.o: Program_to_Check_Leap_Year.cpp
+	$(CPP) -c Program_to_Check_Leap_Year.cpp -o Program_to_Check_Leap_Year.o $(CXXFLAGS)
+
+Even_or_Odd_using_if_else.o: Even_or_Odd_using_if_else.cpp
+	$(CPP) -c Even_or_Odd_using_if_else.cpp -o Even_or_Odd_using_if_else.o $(CXXFLAGS)
+
+Even_or_Odd_using_ternary_operators.o: Even_or_Odd_using_ternary_operators.cpp
+	$(CPP) -c Even_or_Odd_using_ternary_operators.cpp -o Even_or_Odd_using_ternary_operators.o $(CXXFLAGS)
+
+Find_Largest_Number_01.o: Find_Largest_Number_01.cpp
+	$(CPP) -c Find_Largest_Number_01.cpp -o Find_Largest_Number_01.o $(CXXFLAGS)
+
+Find_Largest_Number_02.o: Find_Largest_Number_02.cpp
+	$(CPP) -c Find_Largest_Number_02.cpp -o Find_Largest_Number_02.o $(CXXFLAGS)
+
+Find_Largest_Number_03.o: Find_Largest_Number_03.cpp
+	$(CPP) -c Find_Largest_Number_03.cpp -o Find_Largest_Number_03.o $(CXXFLAGS)
+
+Quadratic_Equation.o: Quadratic_Equation.cpp
+	$(CPP) -c Quadratic_Equation.cpp -o Quadratic_Equation.o $(CXXFLAGS)
+
+For_Loop_demo.o: For_Loop_demo.cpp
+	$(CPP) -c For_Loop_demo.cpp -o For_Loop_demo.o $(CXXFLAGS)
+
+While_Loop_Demo.o: While_Loop_Demo.cpp
+	$(CPP) -c While_Loop_Demo.cpp -o While_Loop_Demo.o $(CXXFLAGS)
+
+Do_while_loop_demo.o: Do_while_loop_demo.cpp
+	$(CPP) -c Do_while_loop_demo.cpp -o Do_while_loop_demo.o $(CXXFLAGS)
+
+Infinite_Loop.o: Infinite_Loop.cpp
+	$(CPP) -c Infinite_Loop.cpp -o Infinite_Loop.o $(CXXFLAGS)
+
+Sum_of_Natural_Numbers_using_loop.o: Sum_of_Natural_Numbers_using_loop.cpp
+	$(CPP) -c Sum_of_Natural_Numbers_using_loop.cpp -o Sum_of_Natural_Numbers_using_loop.o $(CXXFLAGS)
+
+Find_Factorial_of_a_given_number.o: Find_Factorial_of_a_given_number.cpp
+	$(CPP) -c Find_Factorial_of_a_given_number.cpp -o Find_Factorial_of_a_given_number.o $(CXXFLAGS)
+
+Display_Multiplication_table.o: Display_Multiplication_table.cpp
+	$(CPP) -c Display_Multiplication_table.cpp -o Display_Multiplication_table.o $(CXXFLAGS)
+
+Exercise03.o: Exercise03.cpp
+	$(CPP) -c Exercise03.cpp -o Exercise03.o $(CXXFLAGS)
+
+Exercise04.o: Exercise04.cpp
+	$(CPP) -c Exercise04.cpp -o Exercise04.o $(CXXFLAGS)
+
+Exercise05.o: Exercise05.cpp
+	$(CPP) -c Exercise05.cpp -o Exercise05.o $(CXXFLAGS)
+
+Exercise06.o: Exercise06.cpp
+	$(CPP) -c Exercise06.cpp -o Exercise06.o $(CXXFLAGS)
+
+Exercise07.o: Exercise07.cpp
+	$(CPP) -c Exercise07.cpp -o Exercise07.o $(CXXFLAGS)
+
+Func_sample01.o: Func_sample01.cpp
+	$(CPP) -c Func_sample01.cpp -o Func_sample01.o $(CXXFLAGS)
+
+Func_Pass_by_Value.o: Func_Pass_by_Value.cpp
+	$(CPP) -c Func_Pass_by_Value.cpp -o Func_Pass_by_Value.o $(CXXFLAGS)
+
+Func_Pass_by_Reference.o: Func_Pass_by_Reference.cpp
+	$(CPP) -c Func_Pass_by_Reference.cpp -o Func_Pass_by_Reference.o $(CXXFLAGS)
+
+Default_Arguments_01.o: Default_Arguments_01.cpp
+	$(CPP) -c Default_Arguments_01.cpp -o Default_Arguments_01.o $(CXXFLAGS)
+
+Default_Arguments_02.o: Default_Arguments_02.cpp
+	$(CPP) -c Default_Arguments_02.cpp -o Default_Arguments_02.o $(CXXFLAGS)
+
+Function_Argument_01.o: Function_Argument_01.cpp
+	$(CPP) -c Function_Argument_01.cpp -o Function_Argument_01.o $(CXXFLAGS)
+
+Function_Argument_02.o: Function_Argument_02.cpp
+	$(CPP) -c Function_Argument_02.cpp -o Function_Argument_02.o $(CXXFLAGS)
+
+Function_Argument_03.o: Function_Argument_03.cpp
+	$(CPP) -c Function_Argument_03.cpp -o Function_Argument_03.o $(CXXFLAGS)
+
+Function_Argument_04.o: Function_Argument_04.cpp
+	$(CPP) -c Function_Argument_04.cpp -o Function_Argument_04.o $(CXXFLAGS)
+
+Return_from_void_01.o: Return_from_void_01.cpp
+	$(CPP) -c Return_from_void_01.cpp -o Return_from_void_01.o $(CXXFLAGS)
+
+Return_from_void_02.o: Return_from_void_02.cpp
+	$(CPP) -c Return_from_void_02.cpp -o Return_from_void_02.o $(CXXFLAGS)
+
+Return_from_void_03.o: Return_from_void_03.cpp
+	$(CPP) -c Return_from_void_03.cpp -o Return_from_void_03.o $(CXXFLAGS)
+
+Returning_multiple_values.o: Returning_multiple_values.cpp
+	$(CPP) -c Returning_multiple_values.cpp -o Returning_multiple_values.o $(CXXFLAGS)
+
+Functors_01.o: Functors_01.cpp
+	$(CPP) -c Functors_01.cpp -o Functors_01.o $(CXXFLAGS)
+
+Functors_02.o: Functors_02.cpp
+	$(CPP) -c Functors_02.cpp -o Functors_02.o $(CXXFLAGS)
+
+Program_without_transform.o: Program_without_transform.cpp
+	$(CPP) -c Program_without_transform.cpp -o Program_without_transform.o $(CXXFLAGS)
+
+Using_transform_function_of_STL.o: Using_transform_function_of_STL.cpp
+	$(CPP) -c Using_transform_function_of_STL.cpp -o Using_transform_function_of_STL.o $(CXXFLAGS)
+
+Add_arrays_in_single_line.o: Add_arrays_in_single_line.cpp
+	$(CPP) -c Add_arrays_in_single_line.cpp -o Add_arrays_in_single_line.o $(CXXFLAGS)
+
+Unary_operation_with_transform.o: Unary_operation_with_transform.cpp
+	$(CPP) -c Unary_operation_with_transform.cpp -o Unary_operation_with_transform.o $(CXXFLAGS)
+
+Binary_Operation_with_transform.o: Binary_Operation_with_transform.cpp
+	$(CPP) -c Binary_Operation_with_transform.cpp -o Binary_Operation_with_transform.o $(CXXFLAGS)
+
+Unary_Operation.o: Unary_Operation.cpp
+	$(CPP) -c Unary_Operation.cpp -o Unary_Operation.o $(CXXFLAGS)
+
+Ceil_and_Floor_01.o: Ceil_and_Floor_01.cpp
+	$(CPP) -c Ceil_and_Floor_01.cpp -o Ceil_and_Floor_01.o $(CXXFLAGS)
+
+Ceil_and_Floor_02.o: Ceil_and_Floor_02.cpp
+	$(CPP) -c Ceil_and_Floor_02.cpp -o Ceil_and_Floor_02.o $(CXXFLAGS)
+
+Const_member_functions_01.o: Const_member_functions_01.cpp
+	$(CPP) -c Const_member_functions_01.cpp -o Const_member_functions_01.o $(CXXFLAGS)
+
+Const_member_functions_02.o: Const_member_functions_02.cpp
+	$(CPP) -c Const_member_functions_02.cpp -o Const_member_functions_02.o $(CXXFLAGS)
+
+Const_member_functions_03.o: Const_member_functions_03.cpp
+	$(CPP) -c Const_member_functions_03.cpp -o Const_member_functions_03.o $(CXXFLAGS)
+
+atol_function.o: atol_function.cpp
+	$(CPP) -c atol_function.cpp -o atol_function.o $(CXXFLAGS)
+
+atoll_function.o: atoll_function.cpp
+	$(CPP) -c atoll_function.cpp -o atoll_function.o $(CXXFLAGS)
+
+atof_function.o: atof_function.cpp
+	$(CPP) -c atof_function.cpp -o atof_function.o $(CXXFLAGS)
+
+swap_program_01.o: swap_program_01.cpp
+	$(CPP) -c swap_program_01.cpp -o swap_program_01.o $(CXXFLAGS)
+
+swap_program_02.o: swap_program_02.cpp
+	$(CPP) -c swap_program_02.cpp -o swap_program_02.o $(CXXFLAGS)
+
+"wcscat_\ function.o": wcscat_\ function.cpp
+	$(CPP) -c "wcscat_ function.cpp" -o "wcscat_ function.o" $(CXXFLAGS)
+
+11_wcscmp_function_01.o: 11_wcscmp_function_01.cpp
+	$(CPP) -c 11_wcscmp_function_01.cpp -o 11_wcscmp_function_01.o $(CXXFLAGS)
+
+12_wcscpy_function.o: 12_wcscpy_function.cpp
+	$(CPP) -c 12_wcscpy_function.cpp -o 12_wcscpy_function.o $(CXXFLAGS)
+
+13_wcslen_function_01.o: 13_wcslen_function_01.cpp
+	$(CPP) -c 13_wcslen_function_01.cpp -o 13_wcslen_function_01.o $(CXXFLAGS)
+
+13_wcslen_function_02.o: 13_wcslen_function_02.cpp
+	$(CPP) -c 13_wcslen_function_02.cpp -o 13_wcslen_function_02.o $(CXXFLAGS)
+
+14_difftime_function.o: 14_difftime_function.cpp
+	$(CPP) -c 14_difftime_function.cpp -o 14_difftime_function.o $(CXXFLAGS)
+
+15_asctime_function.o: 15_asctime_function.cpp
+	$(CPP) -c 15_asctime_function.cpp -o 15_asctime_function.o $(CXXFLAGS)
+
+16_localtime_function.o: 16_localtime_function.cpp
+	$(CPP) -c 16_localtime_function.cpp -o 16_localtime_function.o $(CXXFLAGS)
+
+17_isnormal_function_float.o: 17_isnormal_function_float.cpp
+	$(CPP) -c 17_isnormal_function_float.cpp -o 17_isnormal_function_float.o $(CXXFLAGS)
+
+17_isnormal_function_double.o: 17_isnormal_function_double.cpp
+	$(CPP) -c 17_isnormal_function_double.cpp -o 17_isnormal_function_double.o $(CXXFLAGS)
+
+17_isnormal_function_long_double.o: 17_isnormal_function_long_double.cpp
+	$(CPP) -c 17_isnormal_function_long_double.cpp -o 17_isnormal_function_long_double.o $(CXXFLAGS)
+
+18_ctime_Function_demo.o: 18_ctime_Function_demo.cpp
+	$(CPP) -c 18_ctime_Function_demo.cpp -o 18_ctime_Function_demo.o $(CXXFLAGS)
+
+1_Array_declaration_by_specifying_size.o: 1_Array_declaration_by_specifying_size.cpp
+	$(CPP) -c 1_Array_declaration_by_specifying_size.cpp -o 1_Array_declaration_by_specifying_size.o $(CXXFLAGS)
+
+2_Array_declaration_by_initializing_elements.o: 2_Array_declaration_by_initializing_elements.cpp
+	$(CPP) -c 2_Array_declaration_by_initializing_elements.cpp -o 2_Array_declaration_by_initializing_elements.o $(CXXFLAGS)
+
+3_Specifying_size_and_initializing_elements.o: 3_Specifying_size_and_initializing_elements.cpp
+	$(CPP) -c 3_Specifying_size_and_initializing_elements.cpp -o 3_Specifying_size_and_initializing_elements.o $(CXXFLAGS)
+
+Array_Example_01.o: Array_Example_01.cpp
+	$(CPP) -c Array_Example_01.cpp -o Array_Example_01.o $(CXXFLAGS)
+
+Array_Example_02.o: Array_Example_02.cpp
+	$(CPP) -c Array_Example_02.cpp -o Array_Example_02.o $(CXXFLAGS)
+
+Array_Example_03.o: Array_Example_03.cpp
+	$(CPP) -c Array_Example_03.cpp -o Array_Example_03.o $(CXXFLAGS)
+
+1_Using_Pointers.o: 1_Using_Pointers.cpp
+	$(CPP) -c 1_Using_Pointers.cpp -o 1_Using_Pointers.o $(CXXFLAGS)
+
+2_Using_2D_array.o: 2_Using_2D_array.cpp
+	$(CPP) -c 2_Using_2D_array.cpp -o 2_Using_2D_array.o $(CXXFLAGS)
+
+3_Using_string_Keyword.o: 3_Using_string_Keyword.cpp
+	$(CPP) -c 3_Using_string_Keyword.cpp -o 3_Using_string_Keyword.o $(CXXFLAGS)
+
+4_Using_Vectors.o: 4_Using_Vectors.cpp
+	$(CPP) -c 4_Using_Vectors.cpp -o 4_Using_Vectors.o $(CXXFLAGS)
+
+Two_Dimensional_Array.o: Two_Dimensional_Array.cpp
+	$(CPP) -c Two_Dimensional_Array.cpp -o Two_Dimensional_Array.o $(CXXFLAGS)
+
+Initializing_Two_Dimensional_Arrays.o: Initializing_Two_Dimensional_Arrays.cpp
+	$(CPP) -c Initializing_Two_Dimensional_Arrays.cpp -o Initializing_Two_Dimensional_Arrays.o $(CXXFLAGS)
+
+Two_Dimensional_Array_Demo_01.o: Two_Dimensional_Array_Demo_01.cpp
+	$(CPP) -c Two_Dimensional_Array_Demo_01.cpp -o Two_Dimensional_Array_Demo_01.o $(CXXFLAGS)
+
+Three_Dimensional_Array.o: Three_Dimensional_Array.cpp
+	$(CPP) -c Three_Dimensional_Array.cpp -o Three_Dimensional_Array.o $(CXXFLAGS)
+
+Three_Dimensional_Array_Demo.o: Three_Dimensional_Array_Demo.cpp
+	$(CPP) -c Three_Dimensional_Array_Demo.cpp -o Three_Dimensional_Array_Demo.o $(CXXFLAGS)
+
+Raw_String_Literal_Demo.o: Raw_String_Literal_Demo.cpp
+	$(CPP) -c Raw_String_Literal_Demo.cpp -o Raw_String_Literal_Demo.o $(CXXFLAGS)
+
+Method_1_Writing_our_own_sizeof.o: Method_1_Writing_our_own_sizeof.cpp
+	$(CPP) -c Method_1_Writing_our_own_sizeof.cpp -o Method_1_Writing_our_own_sizeof.o $(CXXFLAGS)
+
+Method_2_Using_a_pointer_hack.o: Method_2_Using_a_pointer_hack.cpp
+	$(CPP) -c Method_2_Using_a_pointer_hack.cpp -o Method_2_Using_a_pointer_hack.o $(CXXFLAGS)
+
+String_Stream_Demo.o: String_Stream_Demo.cpp
+	$(CPP) -c String_Stream_Demo.cpp -o String_Stream_Demo.o $(CXXFLAGS)
+
+Strtok_String_Demo.o: Strtok_String_Demo.cpp
+	$(CPP) -c Strtok_String_Demo.cpp -o Strtok_String_Demo.o $(CXXFLAGS)
+
+Another_Example_of_strtok.o: Another_Example_of_strtok.cpp
+	$(CPP) -c Another_Example_of_strtok.cpp -o Another_Example_of_strtok.o $(CXXFLAGS)
+
+getline_string_01.o: getline_string_01.cpp
+	$(CPP) -c getline_string_01.cpp -o getline_string_01.o $(CXXFLAGS)
+
+getline_string_02.o: getline_string_02.cpp
+	$(CPP) -c getline_string_02.cpp -o getline_string_02.o $(CXXFLAGS)
+
+getline_string_03.o: getline_string_03.cpp
+	$(CPP) -c getline_string_03.cpp -o getline_string_03.o $(CXXFLAGS)
+
+Count_number_of_words_in_a_string.o: Count_number_of_words_in_a_string.cpp
+	$(CPP) -c Count_number_of_words_in_a_string.cpp -o Count_number_of_words_in_a_string.o $(CXXFLAGS)
+
+Convert_string_to_char_01.o: Convert_string_to_char_01.cpp
+	$(CPP) -c Convert_string_to_char_01.cpp -o Convert_string_to_char_01.o $(CXXFLAGS)
+
+Convert_string_to_char_02.o: Convert_string_to_char_02.cpp
+	$(CPP) -c Convert_string_to_char_02.cpp -o Convert_string_to_char_02.o $(CXXFLAGS)
+
+Character_array_to_string_01.o: Character_array_to_string_01.cpp
+	$(CPP) -c Character_array_to_string_01.cpp -o Character_array_to_string_01.o $(CXXFLAGS)
+
+Character_array_to_string_02.o: Character_array_to_string_02.cpp
+	$(CPP) -c Character_array_to_string_02.cpp -o Character_array_to_string_02.o $(CXXFLAGS)
+
+Single_character_to_string.o: Single_character_to_string.cpp
+	$(CPP) -c Single_character_to_string.cpp -o Single_character_to_string.o $(CXXFLAGS)
+
+String_to_Integer_Array.o: String_to_Integer_Array.cpp
+	$(CPP) -c String_to_Integer_Array.cpp -o String_to_Integer_Array.o $(CXXFLAGS)
+
+String_to_an_Integer_Demo.o: String_to_an_Integer_Demo.cpp
+	$(CPP) -c String_to_an_Integer_Demo.cpp -o String_to_an_Integer_Demo.o $(CXXFLAGS)
+
+Strrchr_function_demo.o: Strrchr_function_demo.cpp
+	$(CPP) -c Strrchr_function_demo.cpp -o Strrchr_function_demo.o $(CXXFLAGS)
+
+isspace_function_demo_01.o: isspace_function_demo_01.cpp
+	$(CPP) -c isspace_function_demo_01.cpp -o isspace_function_demo_01.o $(CXXFLAGS)
+
+isspace_function_demo_02.o: isspace_function_demo_02.cpp
+	$(CPP) -c isspace_function_demo_02.cpp -o isspace_function_demo_02.o $(CXXFLAGS)
+
+isspace_function_demo_03.o: isspace_function_demo_03.cpp
+	$(CPP) -c isspace_function_demo_03.cpp -o isspace_function_demo_03.o $(CXXFLAGS)
+
+Using_char_demo.o: Using_char_demo.cpp
+	$(CPP) -c Using_char_demo.cpp -o Using_char_demo.o $(CXXFLAGS)
+
+Using_char_demo_with_const.o: Using_char_demo_with_const.cpp
+	$(CPP) -c Using_char_demo_with_const.cpp -o Using_char_demo_with_const.o $(CXXFLAGS)
+
+Using_std_string_demo.o: Using_std_string_demo.cpp
+	$(CPP) -c Using_std_string_demo.cpp -o Using_std_string_demo.o $(CXXFLAGS)
+
+Using_char_demo_01.o: Using_char_demo_01.cpp
+	$(CPP) -c Using_char_demo_01.cpp -o Using_char_demo_01.o $(CXXFLAGS)
+
+Using_char_demo_02.o: Using_char_demo_02.cpp
+	$(CPP) -c Using_char_demo_02.cpp -o Using_char_demo_02.o $(CXXFLAGS)
+
+Using_char_demo_03.o: Using_char_demo_03.cpp
+	$(CPP) -c Using_char_demo_03.cpp -o Using_char_demo_03.o $(CXXFLAGS)
+
+Substring_in_C++_01.o: Substring_in_C++_01.cpp
+	$(CPP) -c Substring_in_C++_01.cpp -o Substring_in_C++_01.o $(CXXFLAGS)
+
+Substring_in_C++_02.o: Substring_in_C++_02.cpp
+	$(CPP) -c Substring_in_C++_02.cpp -o Substring_in_C++_02.o $(CXXFLAGS)
+
+Example_C++_Array_01.o: Example_C++_Array_01.cpp
+	$(CPP) -c Example_C++_Array_01.cpp -o Example_C++_Array_01.o $(CXXFLAGS)
+
+Example_C++_Array_02.o: Example_C++_Array_02.cpp
+	$(CPP) -c Example_C++_Array_02.cpp -o Example_C++_Array_02.o $(CXXFLAGS)
+
+Example_C++_Array_03.o: Example_C++_Array_03.cpp
+	$(CPP) -c Example_C++_Array_03.cpp -o Example_C++_Array_03.o $(CXXFLAGS)
+
+Example_C++_Array_04.o: Example_C++_Array_04.cpp
+	$(CPP) -c Example_C++_Array_04.cpp -o Example_C++_Array_04.o $(CXXFLAGS)
+
+Example_C++_Array_05.o: Example_C++_Array_05.cpp
+	$(CPP) -c Example_C++_Array_05.cpp -o Example_C++_Array_05.o $(CXXFLAGS)
+
+Example_C++_Array_06.o: Example_C++_Array_06.cpp
+	$(CPP) -c Example_C++_Array_06.cpp -o Example_C++_Array_06.o $(CXXFLAGS)
+
+Exercise_c++_array_01.o: Exercise_c++_array_01.cpp
+	$(CPP) -c Exercise_c++_array_01.cpp -o Exercise_c++_array_01.o $(CXXFLAGS)
+
+Exercise_c++_array_02.o: Exercise_c++_array_02.cpp
+	$(CPP) -c Exercise_c++_array_02.cpp -o Exercise_c++_array_02.o $(CXXFLAGS)
+
+Exercise_c++_array_03.o: Exercise_c++_array_03.cpp
+	$(CPP) -c Exercise_c++_array_03.cpp -o Exercise_c++_array_03.o $(CXXFLAGS)
+
+Exercise_c++_array_04.o: Exercise_c++_array_04.cpp
+	$(CPP) -c Exercise_c++_array_04.cpp -o Exercise_c++_array_04.o $(CXXFLAGS)
+
+Exercise_c++_array_05.o: Exercise_c++_array_05.cpp
+	$(CPP) -c Exercise_c++_array_05.cpp -o Exercise_c++_array_05.o $(CXXFLAGS)
+
+Exercise_c++_array_06.o: Exercise_c++_array_06.cpp
+	$(CPP) -c Exercise_c++_array_06.cpp -o Exercise_c++_array_06.o $(CXXFLAGS)
+
+Example_C++_Array_07.o: Example_C++_Array_07.cpp
+	$(CPP) -c Example_C++_Array_07.cpp -o Example_C++_Array_07.o $(CXXFLAGS)
+
+Example_C++_Array_08.o: Example_C++_Array_08.cpp
+	$(CPP) -c Example_C++_Array_08.cpp -o Example_C++_Array_08.o $(CXXFLAGS)
+
+Example_C++_Array_09.o: Example_C++_Array_09.cpp
+	$(CPP) -c Example_C++_Array_09.cpp -o Example_C++_Array_09.o $(CXXFLAGS)
+
+Example_C++_Array_10.o: Example_C++_Array_10.cpp
+	$(CPP) -c Example_C++_Array_10.cpp -o Example_C++_Array_10.o $(CXXFLAGS)
+
+Example_C++_Array_11.o: Example_C++_Array_11.cpp
+	$(CPP) -c Example_C++_Array_11.cpp -o Example_C++_Array_11.o $(CXXFLAGS)

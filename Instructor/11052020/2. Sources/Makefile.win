@@ -1,0 +1,79 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Class_and_object_01.o Class_and_object_02.o Member_Functions_in_Classes_demo.o Constructor_and_Destructor_01.o Default_Constructors_demo.o Parameterized_Constructors_Demo.o Copy_constructor_demo.o Destructors_demo.o Access_Modifiers_Public.o Access_Modifiers_Private_01.o Access_Modifiers_Private_02.o Access_Modifiers_Protected.o Inheritance_demo_01.o Modes_of_Inheritance_demo.o Single_Inheritance_demo.o Multiple_Inheritance_demo.o Multilevel_Inheritance_demo.o Hierarchical_Inheritance_demo.o
+LINKOBJ  = Class_and_object_01.o Class_and_object_02.o Member_Functions_in_Classes_demo.o Constructor_and_Destructor_01.o Default_Constructors_demo.o Parameterized_Constructors_Demo.o Copy_constructor_demo.o Destructors_demo.o Access_Modifiers_Public.o Access_Modifiers_Private_01.o Access_Modifiers_Private_02.o Access_Modifiers_Protected.o Inheritance_demo_01.o Modes_of_Inheritance_demo.o Single_Inheritance_demo.o Multiple_Inheritance_demo.o Multilevel_Inheritance_demo.o Hierarchical_Inheritance_demo.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = OOP_Projects.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Class_and_object_01.o: Class_and_object_01.cpp
+	$(CPP) -c Class_and_object_01.cpp -o Class_and_object_01.o $(CXXFLAGS)
+
+Class_and_object_02.o: Class_and_object_02.cpp
+	$(CPP) -c Class_and_object_02.cpp -o Class_and_object_02.o $(CXXFLAGS)
+
+Member_Functions_in_Classes_demo.o: Member_Functions_in_Classes_demo.cpp
+	$(CPP) -c Member_Functions_in_Classes_demo.cpp -o Member_Functions_in_Classes_demo.o $(CXXFLAGS)
+
+Constructor_and_Destructor_01.o: Constructor_and_Destructor_01.cpp
+	$(CPP) -c Constructor_and_Destructor_01.cpp -o Constructor_and_Destructor_01.o $(CXXFLAGS)
+
+Default_Constructors_demo.o: Default_Constructors_demo.cpp
+	$(CPP) -c Default_Constructors_demo.cpp -o Default_Constructors_demo.o $(CXXFLAGS)
+
+Parameterized_Constructors_Demo.o: Parameterized_Constructors_Demo.cpp
+	$(CPP) -c Parameterized_Constructors_Demo.cpp -o Parameterized_Constructors_Demo.o $(CXXFLAGS)
+
+Copy_constructor_demo.o: Copy_constructor_demo.cpp
+	$(CPP) -c Copy_constructor_demo.cpp -o Copy_constructor_demo.o $(CXXFLAGS)
+
+Destructors_demo.o: Destructors_demo.cpp
+	$(CPP) -c Destructors_demo.cpp -o Destructors_demo.o $(CXXFLAGS)
+
+Access_Modifiers_Public.o: Access_Modifiers_Public.cpp
+	$(CPP) -c Access_Modifiers_Public.cpp -o Access_Modifiers_Public.o $(CXXFLAGS)
+
+Access_Modifiers_Private_01.o: Access_Modifiers_Private_01.cpp
+	$(CPP) -c Access_Modifiers_Private_01.cpp -o Access_Modifiers_Private_01.o $(CXXFLAGS)
+
+Access_Modifiers_Private_02.o: Access_Modifiers_Private_02.cpp
+	$(CPP) -c Access_Modifiers_Private_02.cpp -o Access_Modifiers_Private_02.o $(CXXFLAGS)
+
+Access_Modifiers_Protected.o: Access_Modifiers_Protected.cpp
+	$(CPP) -c Access_Modifiers_Protected.cpp -o Access_Modifiers_Protected.o $(CXXFLAGS)
+
+Inheritance_demo_01.o: Inheritance_demo_01.cpp
+	$(CPP) -c Inheritance_demo_01.cpp -o Inheritance_demo_01.o $(CXXFLAGS)
+
+Modes_of_Inheritance_demo.o: Modes_of_Inheritance_demo.cpp
+	$(CPP) -c Modes_of_Inheritance_demo.cpp -o Modes_of_Inheritance_demo.o $(CXXFLAGS)
+
+Single_Inheritance_demo.o: Single_Inheritance_demo.cpp
+	$(CPP) -c Single_Inheritance_demo.cpp -o Single_Inheritance_demo.o $(CXXFLAGS)
+
+Multiple_Inheritance_demo.o: Multiple_Inheritance_demo.cpp
+	$(CPP) -c Multiple_Inheritance_demo.cpp -o Multiple_Inheritance_demo.o $(CXXFLAGS)
+
+Multilevel_Inheritance_demo.o: Multilevel_Inheritance_demo.cpp
+	$(CPP) -c Multilevel_Inheritance_demo.cpp -o Multilevel_Inheritance_demo.o $(CXXFLAGS)
+
+Hierarchical_Inheritance_demo.o: Hierarchical_Inheritance_demo.cpp
+	$(CPP) -c Hierarchical_Inheritance_demo.cpp -o Hierarchical_Inheritance_demo.o $(CXXFLAGS)
